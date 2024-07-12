@@ -1,5 +1,10 @@
+.cardparrent{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card {
-    width: 295px;
+    width: 305px;
     overflow: hidden;
     border-radius: 25px;
     border: 1px solid lavender;
@@ -28,12 +33,13 @@
     padding: 0px 30px 20px 30px;
  }
  .card__info h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
  }
  .card__info p {
     font-size: 14px;
     font-weight: 600;
+    color: gray;
  }
  .card__info--price {
     text-align: right;
@@ -69,3 +75,5 @@
     border-radius: 10px;
  }
  
+ /* //heart */
+
