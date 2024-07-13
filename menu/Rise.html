@@ -1,27 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Card</title>
+<style>
+  /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  } */
 
-    <style>
-.risediv{
-    background-color: orchid;
-    padding: 5px;
+  .product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 7px solid orangered;
+    padding: 20px;
+    width: auto;
+   margin: 15px;
+  }
+
+  .product-details {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .product-details img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .product-price {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .product-description {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .product-image {
+    text-align: center;
+  }
+
+  .product-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .add-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
     color: white;
-}
-    </style>
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .add-btn:hover {
+    background-color: #218838;
+  }
+</style>
 </head>
-
 <body>
- 
-   <div class="risediv">
-    <h4>Chaines Rise</h4>
-   </div>
- 
-</body>
 
+<div class="product-card">
+  <div class="product-details">
+    <div class="product-title">
+      <img src="img/logo.png" alt="Veg Symbol" width="20">
+      McCheese Burger Veg
+    </div>
+    <div class="product-price">₹261.90</div>
+    <div class="product-description">More Details ></div>
+  </div>
+  <div class="product-image">
+    <img src="img/logo.png" alt="Burger Image">
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-details">
+    <div class="product-title">
+      <img src="img/logo.png" alt="Veg Symbol" width="20">
+      McCheese Burger Veg
+    </div>
+    <div class="product-price">₹261.90</div>
+    <div class="product-description">More Details ></div>
+  </div>
+  <div class="product-image">
+    <img src="img/logo.png" alt="Burger Image">
+  </div>
+</div>
+
+</body>
 </html>
