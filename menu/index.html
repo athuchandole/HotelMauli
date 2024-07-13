@@ -8,49 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .heading {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: orangered;
-      /* padding: 3%; */
-  
-    }
-
-    .maintag {
-      font-size: 1.2em;
-      color: white;
-      /* border: 2px solid saddlebrown; */
-      margin-left: 1em;
-
-    }
-
-  .logo{
-    margin: 10px;
-  }
-    .nav {
-      background-color: white;
-    }
-
-    .nav-pills {
-      font-size: 1.2em;
-    }
-
-    .nav-pills>li.active>a,
-    .nav-pills>li.active>a:focus {
-      color: black;
-      background-color: transparent;
-      border-bottom: 4px solid red;
-
-    }
-
-    .nav-pills>li.active>a:hover {
-      background-color: transparent;
-      color: black;
-    }
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> 
+ <link rel="stylesheet" href="style.css">
+ 
+ <style>
+   
   </style>
 
 </head>
@@ -63,10 +25,11 @@
         <h2 class="maintag">We are watting for your order</h2>
         <img class="logo" src="img/logo.png" alt="logo" style="width: 50px;">
       </div>
-      <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-      <li><a data-toggle="pill" href="#special">special</a></li>
+      <li class="active"><a data-toggle="pill" href="#home">All</a></li>
+      <li><a data-toggle="pill" href="#special">Special</a></li>
+      <li><a data-toggle="pill" href="#menu3">Noodles</a></li>
       <li><a data-toggle="pill" href="#Rise">Rise</a></li>
-      <li><a data-toggle="pill" href="#menu3">Nudals</a></li>
+      
     </ul>
   </div>
 
@@ -82,8 +45,7 @@
       <div id="Rise"></div>
     </div>
     <div id="menu3" class="tab-pane fade">
-      <h3>Nudals</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <div id="noodles"></div>  
     </div>
   </div>
 
@@ -102,6 +64,7 @@
       $("#home").load("special.html", function () {
         $("#home").append('<div id="homeRise"></div>');
         $("#homeRise").load("Rise.html");
+        $("#noodles").load("noodles.html");
       });
 
       // Load special.html into #special
@@ -109,6 +72,9 @@
 
       // Load Rise.html into #Rise
       $("#Rise").load("Rise.html");
+
+      // Load noodles.html into #Rise
+      $("#noodles").load("noodles.html");
     });
   </script>
 
