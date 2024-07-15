@@ -307,3 +307,75 @@
 .add-btn:hover {
   background-color: #218838;
 }
+
+/* floating btn css  */
+.floating-btn {
+  position: fixed;
+  font-size: 40px;
+  bottom: 20px;
+  right: 20px;
+  background-image: url(img/phone.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px; /* Adjusted for vertical centering */
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease; /* Transition for smooth animation */
+}
+
+.floating-btn:hover {
+  transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+
+
+    .popup {
+      display: none;
+      position: fixed;
+      width: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ff0000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1001;
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    .popup-content {
+      margin-top: 20px;
+    }
+
+    .row {
+      margin-top: 10px;
+      border: 2px dashed purple;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+    }
+    
+    .row .name {
+      margin-right: auto; /* Pushes the call-btn to the right */
+    }
+    
+    .row .call-btn {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
