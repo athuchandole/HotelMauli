@@ -1,237 +1,245 @@
 .heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: orangered;
-    /* padding: 3%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orangered;
+  /* padding: 3%; */
 
-  }
+}
 
-  .maintag {
-    font-size: 1.2em;
-    color: white;
-    /* border: 2px solid saddlebrown; */
-    margin-left: 1em;
+.maintag {
+  font-size: 1.2em;
+  color: white;
+  /* border: 2px solid saddlebrown; */
+  margin-left: 1em;
 
-  }
+}
 
-.logo{
+.logo {
   margin: 10px;
 }
-  .nav {
-    background-color: white;
-  }
 
-  .nav-pills {
-    font-size: 1.2em;
-  }
+.nav {
+  background-color: white;
+}
 
-  .nav-pills>li.active>a,
-  .nav-pills>li.active>a:focus {
-    color: black;
-    background-color: transparent;
-    border-bottom: 4px solid red;
+.nav-pills {
+  font-size: 1.2em;
+}
 
-  }
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus {
+  color: black;
+  background-color: transparent;
+  border-bottom: 4px solid red;
 
-  .nav-pills>li.active>a:hover {
-    background-color: transparent;
-    color: black;
-  }
+}
+
+.nav-pills>li.active>a:hover {
+  background-color: transparent;
+  color: black;
+}
 
 
-  /* herocard css  */
+/* herocard css  */
 
-  .herocardparrent{
-    display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- .herocard {
-     width: 350px;
-     overflow: hidden;
-     border-radius: 25px;
-     border: 1px solid lavender;
-     margin: 10px;
-     box-shadow: 5px 5px 15px 5px rgba(230, 230, 250, 1);
-  }
-  
-  .herocard__image {
-     position: relative;
-     height: 140px;
-  }
-  .herocard__image > img {
-     max-width: 100%;
-     border-bottom-right-radius: 30px;
-     transform: rotate(10deg) translate(-15px, -55px);
-     position: absolute;
-     height: 200px;
-     object-fit: cover;
-     object-position: center;
-  }
-  
-  .herocard__info {
-     display: flex;
-     align-items: flex-end;
-     justify-content: space-between;
-     padding: 0px 30px 20px 30px;
-  }
-  .herocard__info h3 {
-     font-size: 20px;
-     font-weight: 700;
-  }
-  .herocard__info p {
-     font-size: 14px;
-     font-weight: 600;
-     color: gray;
-  }
-  .herocard__info--price {
-     text-align: right;
-     color: orangered;
-  }
-  .rect2 {
-     position: relative;
-     bottom: 315px;
-     right: 15px;
-     width: 325px;
-     height: 230px;
-     border: 1px solid lavender;
-     border-radius: 0 0px 80px 0;
-     background-image: url();
-     transform: rotate(10deg);
-     object-fit: cover;
-  }
-  .checked {
-     color: #ffd700;
-  }
-  
-  ::-webkit-scrollbar {
-     width: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-     background: #cccccc;
-     border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-     border-radius: 10px;
-  }
-  
-  /* horihontal card  */
+.herocardparrent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .product-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-left: 7px solid orangered;
-    padding: 15px;
-    width: auto;
-    margin: 15px;
-  }
+.herocard {
+  width: 350px;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 1px solid lavender;
+  margin: 10px;
+  box-shadow: 5px 5px 15px 5px rgba(230, 230, 250, 1);
+}
 
-  .product-details {
-    flex: 1;
-    margin-right: 20px;
-  }
+.herocard__image {
+  position: relative;
+  height: 140px;
+}
 
-  .product-details img {
-    vertical-align: middle;
-    margin-right: 10px;
-  }
+.herocard__image>img {
+  max-width: 100%;
+  border-bottom-right-radius: 30px;
+  transform: rotate(10deg) translate(-15px, -55px);
+  position: absolute;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
 
-  .product-title {
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+.herocard__info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0px 30px 20px 30px;
+}
 
-  .product-price {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
-  }
+.herocard__info h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
 
-  .product-description {
-    font-size: 14px;
-    color: #666;
-  }
+.herocard__info p {
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
 
-  .product-image {
-    text-align: center;
-  }
+.herocard__info--price {
+  text-align: right;
+  color: orangered;
+}
 
-  .product-image img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-    /* border: 2px solid red; */
-  }
+.rect2 {
+  position: relative;
+  bottom: 315px;
+  right: 15px;
+  width: 325px;
+  height: 230px;
+  border: 1px solid lavender;
+  border-radius: 0 0px 80px 0;
+  background-image: url();
+  transform: rotate(10deg);
+  object-fit: cover;
+}
 
- 
+.checked {
+  color: #ffd700;
+}
 
-  /* One full card */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-  .card2 {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid orangered;
-    padding: 15px;
-    width: auto;
-    margin: 15px;
-  }
-  
-  .card2-image {
-    text-align: center;
-  }
-  
-  .card2-image img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .card2-details {
-    margin-top: 15px;
-  }
-  
-  .card2-title {
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .card2-title img {
-    vertical-align: middle;
-    margin-right: 10px;
-  }
-  
-  .card2-price {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .card2-description {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  
- /* tow cards in row  */
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
 
- .cards-container {
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* horihontal card  */
+
+.product-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 7px solid orangered;
+  padding: 15px;
+  width: auto;
+  margin: 15px;
+}
+
+.product-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.product-details img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.product-image {
+  text-align: center;
+}
+
+.product-image img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+}
+
+
+
+/* One full card */
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid orangered;
+  padding: 15px;
+  width: auto;
+  margin: 15px;
+}
+
+.card2-image {
+  text-align: center;
+}
+
+.card2-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card2-details {
+  margin-top: 15px;
+}
+
+.card2-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card2-title img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.card2-price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card2-description {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* tow cards in row  */
+
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -247,7 +255,8 @@
   border-bottom: 7px solid orangered;
   /* border-top: 7px solid orangered; */
   padding: 15px;
-  width: 48%; /* Adjust the width to fit two cards in one row */
+  width: 48%;
+  /* Adjust the width to fit two cards in one row */
   margin-bottom: 15px;
 }
 
@@ -322,60 +331,62 @@
   height: 80px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px; /* Adjusted for vertical centering */
+  line-height: 80px;
+  /* Adjusted for vertical centering */
   cursor: pointer;
   z-index: 1000;
-  transition: transform 0.3s ease; /* Transition for smooth animation */
+  transition: transform 0.3s ease;
+  /* Transition for smooth animation */
 }
 
 .floating-btn:hover {
-  transform: scale(1.1); /* Scale up by 10% on hover */
+  transform: scale(1.1);
+  /* Scale up by 10% on hover */
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ff0000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
 
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
 
-    .popup {
-      display: none;
-      position: fixed;
-      width: 200px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      padding: 20px;
-      border: 1px solid #ff0000;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      z-index: 1001;
-    }
+.popup-content {
+  margin-top: 20px;
+}
 
-    .popup-close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-    }
+.row {
+  margin-top: 10px;
+  border: 2px dashed purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
 
-    .popup-content {
-      margin-top: 20px;
-    }
+.row .name {
+  margin-right: auto;
+  /* Pushes the call-btn to the right */
+}
 
-    .row {
-      margin-top: 10px;
-      border: 2px dashed purple;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5px;
-    }
-    
-    .row .name {
-      margin-right: auto; /* Pushes the call-btn to the right */
-    }
-    
-    .row .call-btn {
-      padding: 5px 10px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
+.row .call-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
