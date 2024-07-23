@@ -123,12 +123,23 @@
       window.open('https://www.instagram.com/hotel_mauli_sinnar/', '_blank');
     });
 
-    document.getElementById('open-whatsapp').addEventListener('click', function () {
-      let phoneNumber = '+919130203039';
-      let message = 'Hye, Hotel Mauli';
-      let whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-      window.open(whatsappUrl, '_blank');
-    });
+    // document.getElementById('open-whatsapp').addEventListener('click', function () {
+    //   let phoneNumber = '+919130203039';
+    //   let message = 'Hye, Hotel Mauli';
+    //   let whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    //   window.open(whatsappUrl, '_blank');
+    // });
+
+    // wp test 
+
+    // WhatsApp button script
+document.getElementById('open-whatsapp').addEventListener('click', function() {
+  let phoneNumber = '+919130203039';
+  let message = 'Hi, Hotel Mauli test msg 1';
+  let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, '_blank');
+});
+
 
 // Call Rajesh Tibhe
 document.querySelector('.callrajesh').addEventListener('click', function() {
