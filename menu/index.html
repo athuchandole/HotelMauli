@@ -24,6 +24,7 @@
         <h2 class="maintag">Waiting For Your Order</h2>
         <img class="logo" src="img/logo.png" alt="logo" style="width: 45px;">
       </div>
+      
       <li class="active"><a data-toggle="pill" href="#home">All</a></li>
       <li><a data-toggle="pill" href="#special">Special</a></li>
       <li><a data-toggle="pill" href="#noodles">Noodles</a></li>
@@ -59,12 +60,12 @@
         <img src="img/logo2.png" alt="" width="150px">
       </div>
       <div class="row">
-        <span class="name">Rakesh Tibhe</span>
-        <button class="call-btn">Call</button>
+        <span class="name">Rajesh Tibhe</span>
+        <button class="call-btn callrajesh">Call</button>
       </div>
       <div class="row">
         <span class="name">Yesh Chandole</span>
-        <button class="call-btn">Call</button>
+        <button class="call-btn callyash">Call</button>
       </div>
     </div>
   </div>
@@ -129,23 +130,13 @@
       window.open(whatsappUrl, '_blank');
     });
 
-//     // Open popup
-// document.getElementById('open-popup').addEventListener('click', function() {
-//   document.getElementById('popup').style.display = 'block';
-// });
-
-// Close popup
-document.getElementById('close-popup').addEventListener('click', function() {
-  document.getElementById('popup').style.display = 'none';
-});
-
-// Call Rakesh Tibhe
-document.getElementById('call-rakesh').addEventListener('click', function() {
+// Call Rajesh Tibhe
+document.querySelector('.callrajesh').addEventListener('click', function() {
   window.open('tel:+918087044007');
 });
 
 // Call Yesh Chandole
-document.getElementById('call-yesh').addEventListener('click', function() {
+document.querySelector('.callyesh').addEventListener('click', function() {
   window.open('tel:+919309584322');
 });
 
