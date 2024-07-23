@@ -1,11 +1,14 @@
+body{
+
+}
+
 .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: orangered;
-  /* padding: 3%; */
-
-}
+  background: rgb(238,42,123);
+  background: linear-gradient(0deg, rgba(238,42,123,1) 0%, rgba(255,69,0,1) 100%);
+  }
 
 .maintag {
   font-size: 1.2em;
