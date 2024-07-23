@@ -318,21 +318,21 @@
 }
 
 /* floating btn css  */
+
 .floating-btn {
   position: fixed;
   font-size: 40px;
   bottom: 20px;
   right: 20px;
-  color: #fff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px; /* Adjusted to center the text vertically */
+  line-height: 50px;
   cursor: pointer;
   z-index: 1000;
   transition: transform 0.3s ease;
-  /* border: 2px solid red; */
+  background-color: green;
 }
 
 .floating-btn.phone {
@@ -366,16 +366,16 @@
   display: none;
   position: fixed;
   width: 250px;
-  top: 50%;
+  bottom: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   font-size: 15px;
-  background-color: gray;
-  padding: 20px;
+  background-color: rgb(213, 213, 213);
+  padding: 30px;
   border-radius: 5%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1001;
 }
+
 
 .popup-close {
   position: absolute;
@@ -385,13 +385,19 @@
   font-size: 3em;
 }
 
+.popimg{
+ /* background-color: white; */
+ /* border-radius: 20px; */
+}
 .popup-content {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .row {
+  color: rgb(0, 0, 0);
   margin-top: 10px;
-  border: 1px solid #007bff;
+  font-size: large;
+  /* border: 1px solid #007bff; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -405,6 +411,7 @@
 .row .call-btn {
   padding: 5px 10px;
   background-color: #007bff;
+  border-radius: 5px;
   color: #fff;
   border: none;
   cursor: pointer;

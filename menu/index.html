@@ -45,24 +45,25 @@
   </div>
 
   <!-- Floating button -->
-  <div class="floating-btn phone" id="open-popup"></div>
-  <div class="floating-btn instagram" id="open-instagram"></div>
-<div class="floating-btn whatsapp" id="open-whatsapp"></div>
+  <div class="fbtn">
+    <div class="floating-btn phone" id="open-popup"></div>
+    <div class="floating-btn instagram" id="open-instagram"></div>
+    <div class="floating-btn whatsapp" id="open-whatsapp"></div>
+  </div>
 
   <!-- Popup -->
   <div class="popup" id="popup">
     <span class="popup-close" id="close-popup">&times;</span>
     <div class="popup-content">
+      <div class="row popimg">
+        <img src="img/logo2.png" alt="" width="150px">
+      </div>
       <div class="row">
         <span class="name">Rakesh Tibhe</span>
         <button class="call-btn">Call</button>
       </div>
       <div class="row">
         <span class="name">Yesh Chandole</span>
-        <button class="call-btn">Call</button>
-      </div>
-      <div class="row">
-        <span class="name">Other</span>
         <button class="call-btn">Call</button>
       </div>
     </div>
@@ -107,26 +108,47 @@
       $("#Rise").load("Rise.html");
     });
 
-     // Fetch and insert footer
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    });
+    // Fetch and insert footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
 
 
 
     //btn script 
-    document.getElementById('open-instagram').addEventListener('click', function() {
-  window.open('https://www.instagram.com/hotel_mauli_sinnar/', '_blank');
+    document.getElementById('open-instagram').addEventListener('click', function () {
+      window.open('https://www.instagram.com/hotel_mauli_sinnar/', '_blank');
+    });
+
+    document.getElementById('open-whatsapp').addEventListener('click', function () {
+      let phoneNumber = '+919130203039';
+      let message = 'Hye, Hotel Mauli';
+      let whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    });
+
+//     // Open popup
+// document.getElementById('open-popup').addEventListener('click', function() {
+//   document.getElementById('popup').style.display = 'block';
+// });
+
+// Close popup
+document.getElementById('close-popup').addEventListener('click', function() {
+  document.getElementById('popup').style.display = 'none';
 });
 
-document.getElementById('open-whatsapp').addEventListener('click', function() {
-  let phoneNumber = '+919130203039';
-  let message = 'Hye, Hotel Mauli';
-  let whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-  window.open(whatsappUrl, '_blank');
+// Call Rakesh Tibhe
+document.getElementById('call-rakesh').addEventListener('click', function() {
+  window.open('tel:+918087044007');
 });
+
+// Call Yesh Chandole
+document.getElementById('call-yesh').addEventListener('click', function() {
+  window.open('tel:+919309584322');
+});
+
 
   </script>
 
