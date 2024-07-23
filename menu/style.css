@@ -323,24 +323,43 @@
   font-size: 40px;
   bottom: 20px;
   right: 20px;
-  background-image: url(img/call.png);
-  background-color: orangered;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #fff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
+  line-height: 50px; /* Adjusted to center the text vertically */
   cursor: pointer;
   z-index: 1000;
   transition: transform 0.3s ease;
+  /* border: 2px solid red; */
+}
+
+.floating-btn.phone {
+  background-image: url('img/call.svg');
+  background-color: orangered;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.floating-btn.instagram {
+  right: 90px; /* Position beside the phone button */
+  background-image: url('img/insta.svg');
+  /* background-color: #E1306C; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.floating-btn.whatsapp {
+  right: 160px; /* Position beside the Instagram button */
+  background-image: url('img/whatsapp.svg');
+  /* background-color: #25D366; */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .floating-btn:hover {
   transform: scale(1.1);
-  /* Scale up by 10% on hover */
 }
 
 .popup {
@@ -381,7 +400,6 @@
 
 .row .name {
   margin-right: auto;
-  /* Pushes the call-btn to the right */
 }
 
 .row .call-btn {
